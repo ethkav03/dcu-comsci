@@ -23,10 +23,7 @@ public class Point implements Comparable {
     }
 
     public boolean lessThan(Point other) {
-        if (this.equals(other) || x > other.getX() || y > other.getY()) {
-            return false;
-        }
-        return true;
+        return false if this.equals(other) || x > other.getX() || y > other.getY() else true;
     }
 
     public boolean lessThan(Order other) {
