@@ -1,59 +1,29 @@
-interface Activity {
-    String getURI() { }
-}
-
-/* receives a message and adds it to the Inbox */
-interface ReceiveMessage {
-    // returns a success / failure message
-    boolean receive(Activity);
-}
-
-/* removes and retrieves the next message from inbox */
-interface ReadNextMessage {
-    // returns an Activity, or null if there are no messages
-    Activity readNext();
-}
-
-/* provides inbox functionality */
-interface Inbox extends ReceiveMessage, ReadNextMessage {
-    // returns count of unread messages in inbox
-    int getCount();
-}
-
-/* sends a message and adds it to the Outbox */
-interface SendMessage {
-    boolean send(Activity);
-}
-
-/* removes and delivers the next message from inbox */
-interface DeliverNextMessage {
-    // returns an Activity, or null if there are no messages
-    Activity deliverNext();
-}
-
-/* provides outbox functionality */
-interface Outbox extends SendMessage, DeliverNextMessage {
-    // returns count of unsent messages in outbox
-    int getCount();
-}
-
-/* the client App that handles inboxes and outboxes */
-interface App {
-    Inbox getInbox(); // retrieves the inbox
-    Outbox getOutbox(); // retrievs the outbox
-    String demo(); // prints a demo of the app in action
-}
-
 public class ClientApp implements App {
-    public Inbox getInbox() {
+    private Inbox inbox;
+    private Outbox outbox;
 
+    ClientApp () {
+        inbox = new ClientInbox();
+        outbox = new ClientOutbox();
     }
 
-    public Outbox getOutbox() {
-
+    public Inbox getInbox () {
+        return this.inbox;
     }
 
-    public String demo() {
+    public Outbox getOutbox () {
+        return this.outbox;
+    }
+
+    public String demo () {
+        return "";
+    }
+
+    public static void main (String args[]) {
+        Person p1 = new Person("https://www.w3.org/ns/activitystreams#Object", "Ethan Kavanagh", "kavane39", "Person 1");
+        System.out.println("Person 1 added\n" + p1);
         
+        Person p2 = new Person("https://www.w3.org/ns/activitystreams#Object", "Jamie Kavanagh", "kavanj49", "Person 2");
+        System.out.println("Person 2 added\n" + p2);
     }
 }
