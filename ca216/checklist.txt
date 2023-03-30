@@ -1,0 +1,22 @@
+Commands:
+1. cd /
+2. clr /
+3. dir /
+4. environ /
+5. echo /
+6. help /
+7. pause /
+8. quit /
+
+Take input from: /
+1. user input /
+2. file /
+
+I/O Redirection:
+1. input '<'
+2. overwrite '>'
+3. append '>>'
+
+Process Execution
+1. Foreground Process /
+2. Background Process
