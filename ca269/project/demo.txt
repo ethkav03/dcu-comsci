@@ -1,0 +1,95 @@
+Person1 added
+- URI: https://www.kavane39.com/user/kavane39
+- name: Ethan Kavanagh
+
+Person2 added
+- URI: https://www.kavane39.com/user/kavanj49
+- name: Jamie Kavanagh
+
+Person1 adds a CreateActivity to Outbox
+- URI: https://www.kavane39.com/posts/001
+- audience: GLOBAL
+- likes: []
+- shares: 0
+- content: This is the first post in JavaVerse!
+- name: First Post
+- published: 2023-03-28T11:14:00
+- deleted: false
+
+Person1 Outbox Delivery
+- https://www.kavane39.com/posts/001
+
+Person2 adds a FollowActivity to Outbox
+- URI: https://www.kavane39.com/user/kavanj49/follow/kavane39
+- actor: https://www.kavane39.com/user/kavanj49
+- object: https://www.kavane39.com/user/kavane39
+
+Person2 Outbox Delivery
+- https://www.kavane39.com/user/kavanj49/follow/kavane39
+
+Person1 Inbox Delivery
+- https://www.kavane39.com/user/kavanj49/follow/kavane39
+
+Person1 reads a FollowActivity from Inbox
+- https://www.kavane39.com/user/kavanj49/follow/kavane39
+
+Person2 Outbox Delivery
+- https://www.kavane39.com/user/kavanj49/follow/kavane39
+
+Person1 adds a LikeActivity to Outbox
+- URI: https://www.kavane39.com/kavane39/likes/post001
+- actor: https://www.kavane39.com/user/kavane39
+- object: https://www.kavane39.com/user/kavane39
+
+Person1 Outbox Delivery
+- https://www.kavane39.com/posts/001
+- https://www.kavane39.com/kavane39/likes/post001
+
+Person2 adds a FollowActivity to Outbox
+- URI: https://www.kavane39.com/user/kavane39/follow/kavanj49
+- actor: https://www.kavane39.com/user/kavane39
+- object: https://www.kavane39.com/user/kavanj49
+
+Person1 Outbox Delivery
+- https://www.kavane39.com/posts/001
+- https://www.kavane39.com/kavane39/likes/post001
+- https://www.kavane39.com/user/kavane39/follow/kavanj49
+
+Person2 Inbox Delivery
+- https://www.kavane39.com/user/kavane39/follow/kavanj49
+
+Person2 adds an UnfollowActivity to Outbox
+- URI: https://www.kavane39.com/user/kavanj49/unfollow/kavane39
+- actor: https://www.kavane39.com/user/kavanj49
+- object: https://www.kavane39.com/user/kavane39
+
+Person2 Outbox Delivery
+- https://www.kavane39.com/user/kavanj49/follow/kavane39
+- https://www.kavane39.com/user/kavanj49/unfollow/kavane39
+
+Person1 Inbox Delivery
+- https://www.kavane39.com/user/kavanj49/unfollow/kavane39
+
+Person1 adds DeleteActivity to Inbox
+- URI: https://www.kavane39.com/delete/post/001
+- actor: https://www.kavane39.com/user/kavane39
+- object: https://www.kavane39.com/posts/001
+
+Person1 reads a UnfollowActivity from Inbox
+- https://www.kavane39.com/user/kavanj49/unfollow/kavane39
+
+Person1 Inbox Delivery
+- https://www.kavane39.com/delete/post/001
+
+Person1 Outbox Delivery
+- https://www.kavane39.com/posts/001
+- https://www.kavane39.com/kavane39/likes/post001
+- https://www.kavane39.com/user/kavane39/follow/kavanj49
+
+Person2 Inbox Delivery
+- https://www.kavane39.com/user/kavane39/follow/kavanj49
+
+Person2 Outbox Delivery
+- https://www.kavane39.com/user/kavanj49/follow/kavane39
+- https://www.kavane39.com/user/kavanj49/unfollow/kavane39
+
