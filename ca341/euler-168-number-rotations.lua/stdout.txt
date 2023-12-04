@@ -1,0 +1,14 @@
+$ lua euler-168-number-rotations.lua 0
+0
+$ lua euler-168-number-rotations.lua 2
+0
+$ lua euler-168-number-rotations.lua 15
+11
+$ lua euler-168-number-rotations.lua 200
+878
+$ lua euler-168-number-rotations.lua 1000
+6332
+$ lua euler-168-number-rotations.lua 10000
+15096
+$ lua euler-168-number-rotations.lua 200000
+15096

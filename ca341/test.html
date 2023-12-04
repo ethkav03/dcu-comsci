@@ -1,0 +1,56 @@
+<h1 style="text-align: center"> Programming Assistant </h1>
+
+<div style="display: grid; grid-template-columns: auto auto; gap: 20px; margin:30px">
+    <div>
+        <div style="max-width: 50%;">
+            <p>I would like to:</p>
+            <select id="selectaction">
+                <option></option>
+                <option>Add comments to my code.</option>
+                <option>Fix my code.</option>
+                <option>Improve my code.</option>
+                <option>Translate my code to another language.</option>
+                <option>Write some documentation for my code in markdown.</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <p>Programming Language</p>
+            <div style="display: flex; height: 35px; max-width: 50%;">
+                <div>
+                    <select id="language">
+                        <option></option>
+                        <option>Bash</option>
+                        <option>C</option>
+                        <option>Clojure</option>
+                        <option>C#</option>
+                        <option>C++</option>
+                        <option>Dart</option>
+                        <option>Go</option>
+                        <option>Haskell</option>
+                        <option>Java</option>
+                        <option>JavaScript</option>
+                        <option>Kotlin</option>
+                        <option>Lua</option>
+                        <option>Perl</option>
+                        <option>PHP</option>
+                        <option>Prolog</option>
+                        <option>Python</option>
+                        <option>R</option>
+                        <option>Ruby</option>
+                        <option>Rust</option>
+                        <option>SQL</option>
+                        <option>Swift</option>
+                    </select>
+                    <p>Code</p>
+                    <textarea style="max-width: 50%;" id="code"></textarea>
+                    <br>
+                    <button onclick="send_request()">Submit</button>
+                </div>
+                <div>
+                    <p id="output"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 

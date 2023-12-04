@@ -1,0 +1,45 @@
+////
+The format of this document is `asciidoc`, and it will be compiled with:
+
+   $ asciidoctor task-description.ascii
+
+This generates the HTML which will be included on the website.
+////
+
+// //////////////////////////////////////////////////////////////
+= Euler 123
+
+****
+Based on Euler problem 123: https://projecteuler.net/problem=123.
+****
+
+// //////////////////////////////////////////////////////////////
+== Lua
+
+.Task
+****
+Assume a single command-line argument, a non-negative integer $x$.
+
+Let Pn be the nth prime: 2,3,5,7,11,..., and let r be the remainder when (Pn - 1)^n + (Pn + 1)^n is divided by Pn^2.
+For example, when n=3, P3=5, and 4^3 + 6^3 = 280 = 5 mod 25.
+0 < x < 683.
+
+Find first prime number n for remainder is greater than x.
+
+Upload your solution to https://euler.computing.dcu.ie/einstein/euler-123-prime-square-remainders.lua.
+****
+
+.Example invocation
+----
+$ lua euler-123-prime-square-remainders.lua 682
+----
+
+.Example standard output
+----
+31
+----
+
+.Explanation
+****
+31 is the lowest prime number with remainder greater than 682.
+****

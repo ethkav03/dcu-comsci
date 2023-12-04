@@ -1,0 +1,45 @@
+////
+The format of this document is `asciidoc`, and it will be compiled with:
+
+   $ asciidoctor task-description.ascii
+
+This generates the HTML which will be included on the website.
+////
+
+// //////////////////////////////////////////////////////////////
+= Euler 145
+
+****
+Based on Euler problem 145: https://projecteuler.net/problem=145.
+****
+
+// //////////////////////////////////////////////////////////////
+== Lua
+
+.Task
+****
+Assume a single command-line argument, a non-negative integer $n$.
+
+Some positive integers n have the property that the sum [n + reverse(n)] consists entirely of odd (decimal) digits.
+For instance, 36 + 63 = 99 and 409 + 904 = 1313. We will call such numbers reversible; so 36, 63, 409, and 904 are reversible.
+Leading zeroes are not allowed in either n or reverse(n).
+
+How many reversible numbers are there below n?
+
+Upload your solution to https://euler.computing.dcu.ie/einstein/[_Einstein_].
+****
+
+.Example invocation
+----
+$ lua euler-145-reversible-numbers.lua 1000
+----
+
+.Example standard output
+----
+126
+----
+
+.Explanation
+****
+There are 126 reversible numbers below 1000.
+****

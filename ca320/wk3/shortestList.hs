@@ -1,7 +1,5 @@
 shortest :: [[a]] -> [a]
-shortest [] = []
 shortest [x] = x
-shortest (x:xs)
-        (length x) < (length maxTail) = x
-        otherwise maxTail
-    where maxTail = shortest xs
+shortest (x:y:lst)
+    | length x > length y = shortest (y:lst)
+    | otherwise = shortest (x:lst)

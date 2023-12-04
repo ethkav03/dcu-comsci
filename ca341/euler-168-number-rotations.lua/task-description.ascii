@@ -1,0 +1,44 @@
+////
+The format of this document is `asciidoc`, and it will be compiled with:
+
+   $ asciidoctor task-description.ascii
+
+This generates the HTML which will be included on the website.
+////
+
+// //////////////////////////////////////////////////////////////
+= Euler 168
+
+****
+Based on Euler problem 168: https://projecteuler.net/problem=168.
+****
+
+// //////////////////////////////////////////////////////////////
+== Lua
+
+.Task
+****
+Assume a single command-line argument, a non-negative integer $n$.
+
+Consider the number 142857. We can right-rotate this number by moving the last digit (7) to the front of it, giving us 714285. It can be verified that 714285 = 5 x 142957.
+This demonstrates an unusual property of 142857: it is a divisor of its right-rotation.
+
+Find the last 5 digits of the sum of all integers i, 10 < i < n that have this property, where, 10 < n < 1000000.
+
+Upload your solution to https://euler.computing.dcu.ie/einstein/euler-168-number-rotations.lua.
+****
+
+.Example invocation
+----
+$ lua euler-168-number-rotations.lua 1000
+----
+
+.Example standard output
+----
+5490
+----
+
+.Explanation
+****
+The last 5 digits of the sum of all number rotations is 5490.
+****

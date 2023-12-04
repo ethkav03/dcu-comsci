@@ -1,0 +1,14 @@
+$ lua euler-145-reversible-numbers.lua 0
+0
+$ lua euler-145-reversible-numbers.lua 2
+0
+$ lua euler-145-reversible-numbers.lua 15
+3
+$ lua euler-145-reversible-numbers.lua 200
+25
+$ lua euler-145-reversible-numbers.lua 1000
+125
+$ lua euler-145-reversible-numbers.lua 10000
+875
+$ lua euler-145-reversible-numbers.lua 200000
+5375

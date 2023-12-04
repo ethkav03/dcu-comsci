@@ -1,0 +1,14 @@
+$ ruby euler-145-reversible-numbers.rb 0
+0
+$ ruby euler-145-reversible-numbers.rb 10
+0
+$ ruby euler-145-reversible-numbers.rb 100
+25
+$ ruby euler-145-reversible-numbers.rb 500
+45
+$ ruby euler-145-reversible-numbers.rb 1000
+125
+$ ruby euler-145-reversible-numbers.rb 5000
+605
+$ ruby euler-145-reversible-numbers.rb 10000
+875

@@ -1,0 +1,14 @@
+$ ruby euler-168-number-rotations.rb 0
+
+$ ruby euler-168-number-rotations.rb 2
+
+$ ruby euler-168-number-rotations.rb 15
+
+$ ruby euler-168-number-rotations.rb 200
+
+$ ruby euler-168-number-rotations.rb 1000
+
+$ ruby euler-168-number-rotations.rb 10000
+65543
+$ ruby euler-168-number-rotations.rb 200000
+24706
