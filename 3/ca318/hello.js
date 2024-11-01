@@ -1,4 +1,4 @@
-const token = "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"
+const token = ""
 
 const url = "https://api.openai.com/v1/chat/completions"
 
